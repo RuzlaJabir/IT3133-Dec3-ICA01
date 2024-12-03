@@ -50,7 +50,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
-                  <Cart cart={cart} />
+                  <Cart cart={cart} /> /* Pass cart to Cart component */
                 }
             </div>
         </>
