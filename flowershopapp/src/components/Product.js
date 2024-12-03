@@ -1,13 +1,13 @@
 import '../assets/CSS/layout.css';
-export default function Product(){
+export default function Product({name,price,img}){
     
     return(
         <div className="grid-item">
 
             <div class="card">
-                <img  />
+                <img  src={require(`../assets/image/${img}`)} alt={name}/>
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
+                    <h5 class="card-title">{name} Price:{price}</h5>
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" />
