@@ -10,6 +10,7 @@ export default function Products(){
 
    //function to add item to cart
    const addToCart = (flower) =>{
+   
     setCart((prevCart) => {
         //check if the item is already in the cart
         const existingItem = prevCart.find((item) => item.id === flower.id);
@@ -40,7 +41,7 @@ export default function Products(){
                                name={flower.name}
                                price={flower.price}
                                img={flower.img}
-                               onAddToCard={() => addToCart(flower)} //Pass function
+                               onAddToCart={() => addToCart(flower)} //Pass function
                             />
                         ))
                     }
@@ -50,7 +51,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
-                  <Cart cart={cart} /> /* Pass cart to Cart component */
+                  <Cart cart={cart} />
                 }
             </div>
         </>
