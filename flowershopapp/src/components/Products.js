@@ -35,7 +35,7 @@ export default function Products(){
                 <div className="grid-container">
                     {
                         //product
-                        flowers.map(flower =>(
+                        flowers.map((flower) =>(
                             <Product
                                key={flower.id}
                                name={flower.name}
@@ -51,7 +51,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
-                  <Cart cart={cart} />
+                  <Cart cart={cart} /> //Pass cart as prop
                 }
             </div>
         </>
